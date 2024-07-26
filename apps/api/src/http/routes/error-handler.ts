@@ -30,5 +30,5 @@ export const errorHandler: FastifyErrorHandler = (error, request, reply) => {
 
   // send error to some observability platform
 
-  return reply.status(500).send({ message: 'Internal server errror.' })
+  return reply.status(500).send({ message: 'Internal server error.' })
 }
