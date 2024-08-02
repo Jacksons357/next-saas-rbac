@@ -61,7 +61,7 @@ export async function authenticateWithGithub(app: FastifyInstance) {
 
       const githubUserResponse = await fetch('https://api.github.com/user', {
         headers: {
-          Authorization: `Bearer ${githubAccessToken}`,
+          Authorization: `Bearer${githubAccessToken}`,
         },
       })
 
